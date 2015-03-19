@@ -1,0 +1,8 @@
+# Mac files #
+.DS_store
+
+# Xcode build files #
+Imaginarium/build/
+Imaginarium.xcodeproj/xcuserdata/
+Imaginarium.xcodeproj/project.xcworkspace/xcuserdata/
+Imaginarium/Imaginarium.xcodeproj/xcuserdata/
