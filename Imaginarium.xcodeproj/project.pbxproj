@@ -14,6 +14,7 @@
 		78768FDE1ABAC40900D7BFC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78768FDD1ABAC40900D7BFC1 /* Images.xcassets */; };
 		78768FE11ABAC40900D7BFC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78768FDF1ABAC40900D7BFC1 /* LaunchScreen.xib */; };
 		78768FED1ABAC40900D7BFC1 /* ImaginariumTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78768FEC1ABAC40900D7BFC1 /* ImaginariumTests.m */; };
+		78768FF81ABACAAE00D7BFC1 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78768FF71ABACAAE00D7BFC1 /* ImageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		78768FE61ABAC40900D7BFC1 /* ImaginariumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImaginariumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78768FEB1ABAC40900D7BFC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78768FEC1ABAC40900D7BFC1 /* ImaginariumTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImaginariumTests.m; sourceTree = "<group>"; };
+		78768FF61ABACAAE00D7BFC1 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		78768FF71ABACAAE00D7BFC1 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				78768FD71ABAC40900D7BFC1 /* ViewController.h */,
 				78768FD81ABAC40900D7BFC1 /* ViewController.m */,
 				78768FDA1ABAC40900D7BFC1 /* Main.storyboard */,
+				78768FF61ABACAAE00D7BFC1 /* ImageViewController.h */,
+				78768FF71ABACAAE00D7BFC1 /* ImageViewController.m */,
 				78768FDD1ABAC40900D7BFC1 /* Images.xcassets */,
 				78768FDF1ABAC40900D7BFC1 /* LaunchScreen.xib */,
 				78768FD01ABAC40900D7BFC1 /* Supporting Files */,
@@ -221,6 +226,7 @@
 			files = (
 				78768FD91ABAC40900D7BFC1 /* ViewController.m in Sources */,
 				78768FD61ABAC40900D7BFC1 /* AppDelegate.m in Sources */,
+				78768FF81ABACAAE00D7BFC1 /* ImageViewController.m in Sources */,
 				78768FD31ABAC40900D7BFC1 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
