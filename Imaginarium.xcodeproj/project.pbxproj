@@ -81,8 +81,6 @@
 		78768FCF1ABAC40900D7BFC1 /* Imaginarium */ = {
 			isa = PBXGroup;
 			children = (
-				78768FD41ABAC40900D7BFC1 /* AppDelegate.h */,
-				78768FD51ABAC40900D7BFC1 /* AppDelegate.m */,
 				78768FD71ABAC40900D7BFC1 /* ViewController.h */,
 				78768FD81ABAC40900D7BFC1 /* ViewController.m */,
 				78768FDA1ABAC40900D7BFC1 /* Main.storyboard */,
@@ -96,6 +94,8 @@
 		78768FD01ABAC40900D7BFC1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				78768FD41ABAC40900D7BFC1 /* AppDelegate.h */,
+				78768FD51ABAC40900D7BFC1 /* AppDelegate.m */,
 				78768FD11ABAC40900D7BFC1 /* Info.plist */,
 				78768FD21ABAC40900D7BFC1 /* main.m */,
 			);
