@@ -35,7 +35,45 @@
 - (void)setImageURL:(NSURL *)imageURL {
 
     _imageURL = imageURL;
-    self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
+    //self.image = [UIImage imageWithData:[NSData dataWithContentsOfURL:self.imageURL]];
+    [self startDownloadingImage];
+}
+
+- (void)startDownloadingImage {
+    
+    self.image = nil;
+    if (self.imageURL) {
+        NSURLRequest *request = [NSURLRequest requestWithURL:self.imageURL];
+        NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration ephemeralSessionConfiguration];
+        NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
+        NSURLSessionDownloadTask *task =
+        [session downloadTaskWithRequest:request
+                       completionHandler:^(NSURL *localfile, NSURLResponse *response, NSError *error) {
+                           if (!error) {
+                               
+                               // In the case of URL was changed to download smth different.
+                               if ([request.URL isEqual:self.imageURL]) {
+                                   
+                                   // Create image based on local file path.
+                                   UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:localfile]];
+                                   
+                                   // Set image to be displayed in the main queue.
+                                   dispatch_async(dispatch_get_main_queue(), ^{
+                                   
+                                       self.image = image;
+                                   });
+                                   
+                                   // Alternative way to do it in the main queue.
+                                   /*
+                                   [self performSelectorOnMainThread:@selector(setImage:)
+                                                          withObject:image
+                                                       waitUntilDone:NO];
+                                    */
+                               }
+                           }
+                       }];
+        [task resume];
+    }
 }
 
 - (UIImageView *)imageView {
